@@ -18,9 +18,9 @@ variables:
   APP_NAME: molecule
   DOCKER_PUBLIC_REGISTRY_URL: docker.io
   DOCKER_PUBLIC_REGISTRY_USERNAME: ${PUBLIC_REGISTRY_USERNAME}
-  DOCKER_PUBLIC_REGISTRY_PASSWORD: ${DOCKER_PUBLIC_REGISTRY_PASSWORD}
+  DOCKER_PUBLIC_REGISTRY_PASSWORD: ${PUBLIC_REGISTRY_PASSWORD}
   DOCKER_PUBLIC_REPO: vptech
-  PUBLIC: true
+  PUBLIC: 'true'
 
 stages:
     - lint
@@ -28,28 +28,6 @@ stages:
     - test
     - publish
     - release
-
-.build:
-  stage: build
-  image: docker:latest
-  artifacts:
-    expire_in: 1 day
-    paths:
-      - image
-  services:
-    - docker:dind
-  variables:
-    DOCKER_DRIVER: overlay
-  tags:
-    - dind
-  before_script:
-    - docker login -u "${PUBLIC_REGISTRY_USERNAME}" -p "${PUBLIC_REGISTRY_PASSWORD}"
-
-build:v2.22:
-  extends: .build:docker
-  variables:
-    MOLECULE_VERSION: 2.22
-    TAG: 2.22
 
 build:v3.0.4:
   extends: .build:docker
@@ -63,11 +41,6 @@ build:v3.0.5:
     MOLECULE_VERSION: 3.0.5
     TAG: 3.0.5 latest
 
-publish:v2.22:
-  extends: .publish:docker
-  variables:
-    TAG: 2.22
-
 publish:v3.0.4:
   extends: .publish:docker
   variables:
@@ -75,6 +48,16 @@ publish:v3.0.4:
 
 publish:v3.0.5:
   extends: .publish:docker
+  variables:
+    TAG: 3.0.5 latest
+
+public:v3.0.4:
+  extends: .publish-public:docker
+  variables:
+    TAG: 3.0.4
+
+public:v3.0.5:
+  extends: .publish-public:docker
   variables:
     TAG: 3.0.5 latest
 ...
