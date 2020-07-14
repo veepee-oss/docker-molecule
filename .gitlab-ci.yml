@@ -40,5 +40,11 @@ public:v3.0.5:
   extends: .publish-public:docker
   variables:
     MOLECULE_VERSION: 3.0.5
-    TAG: 3.0.5 latest
+    TAG: 3.0.5
+
+public:v3.0.6:
+  extends: .publish-public:docker
+  variables:
+    MOLECULE_VERSION: 3.0.6
+    TAG: 3.0.6 latest
 ...
