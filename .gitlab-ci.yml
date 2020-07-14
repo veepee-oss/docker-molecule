@@ -1,0 +1,58 @@
+---
+
+include:
+  - project: veepee/vptech/sre/iac/ci-cd/docker-lint
+    ref: 1.0.0
+    file: gitlab-ci-lint.yml
+  - project: veepee/vptech/sre/iac/ci-cd/markdown-lint
+    ref: 1.2.0
+    file: gitlab-ci.yml
+  - project: veepee/vptech/sre/iac/ci-cd/semantic-release
+    ref: 2.6.0
+    file: gitlab-ci.yml
+
+variables:
+  APP_NAME: molecule
+
+stages:
+    - lint
+    - build
+    - test
+    - publish
+    - release
+
+.build:
+  stage: build
+  image: docker:latest
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - image
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay
+  tags:
+    - dind
+
+build:v2.22:
+  extends: .build
+  script:
+    - docker build --build-arg MOLECULE_VERSION=2.22 --rm --tag molecule:2.22 .
+    - docker tag molecule:2.22 vptech/molecule:2.22
+    - docker push vptech/molecule:2.22
+
+build:v3.0.4:
+  extends: .build
+  script:
+    - docker build --build-arg MOLECULE_VERSION=3.0.4 --rm --tag molecule:3.0.4 .
+    - docker tag molecule:3.0.4 vptech/molecule:3.0.4
+    - docker push vptech/molecule:3.0.4
+
+build:v3.0.5:
+  extends: .build
+  script:
+    - docker build --build-arg MOLECULE_VERSION=3.0.5 --rm --tag molecule:3.0.5 .
+    - docker tag molecule:3.0.5 vptech/molecule:3.0.5
+    - docker push vptech/molecule:3.0.5
+...
