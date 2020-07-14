@@ -46,35 +46,35 @@ stages:
     - docker login -u "${PUBLIC_REGISTRY_USERNAME}" -p "${PUBLIC_REGISTRY_PASSWORD}"
 
 build:v2.22:
-  extends: .build:docker:master
+  extends: .build:docker
   variables:
     MOLECULE_VERSION: 2.22
     TAG: 2.22
 
 build:v3.0.4:
-  extends: .build:docker:master
+  extends: .build:docker
   variables:
     MOLECULE_VERSION: 3.0.4
     TAG: 3.0.4
 
 build:v3.0.5:
-  extends: .build:docker:master
+  extends: .build:docker
   variables:
     MOLECULE_VERSION: 3.0.5
     TAG: 3.0.5 latest
 
 publish:v2.22:
-  extends: .publish:docker:master
+  extends: .publish:docker
   variables:
     TAG: 2.22
 
 publish:v3.0.4:
-  extends: .publish:docker:master
+  extends: .publish:docker
   variables:
     TAG: 3.0.4
 
 publish:v3.0.5:
-  extends: .publish:docker:master
+  extends: .publish:docker
   variables:
     TAG: 3.0.5 latest
 ...
