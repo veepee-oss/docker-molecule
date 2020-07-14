@@ -33,10 +33,6 @@ Supported tags.
 - 3.0.4
 - 3.0.5, latest
 
-## Usage
-
-WIP.
-
 ## Limitations
 
 Currently no limitations.
