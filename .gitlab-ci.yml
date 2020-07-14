@@ -34,6 +34,8 @@ stages:
     DOCKER_DRIVER: overlay
   tags:
     - dind
+  before_script:
+    - docker login -u "${PUBLIC_REGISTRY_USERNAME}" -p "${PUBLIC_REGISTRY_PASSWORD}"
 
 build:v2.22:
   extends: .build
@@ -55,4 +57,10 @@ build:v3.0.5:
     - docker build --build-arg MOLECULE_VERSION=3.0.5 --rm --tag molecule:3.0.5 .
     - docker tag molecule:3.0.5 vptech/molecule:3.0.5
     - docker push vptech/molecule:3.0.5
+
+build:latest:
+  extends: .build
+  script:
+    - docker tag vptech/molecule:3.0.5 vptech/molecule:latest
+    - docker push vptech/molecule:latest
 ...
