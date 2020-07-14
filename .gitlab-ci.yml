@@ -29,28 +29,6 @@ stages:
     - publish
     - release
 
-build:v3.0.4:
-  extends: .build:docker
-  variables:
-    MOLECULE_VERSION: 3.0.4
-    TAG: 3.0.4
-
-build:v3.0.5:
-  extends: .build:docker
-  variables:
-    MOLECULE_VERSION: 3.0.5
-    TAG: 3.0.5 latest
-
-publish:v3.0.4:
-  extends: .publish:docker
-  variables:
-    TAG: 3.0.4
-
-publish:v3.0.5:
-  extends: .publish:docker
-  variables:
-    TAG: 3.0.5 latest
-
 public:v3.0.4:
   extends: .publish-public:docker
   variables:
