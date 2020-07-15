@@ -22,6 +22,7 @@ variables:
   DOCKER_PUBLIC_REGISTRY_PASSWORD: ${PUBLIC_REGISTRY_PASSWORD}
   DOCKER_PUBLIC_REPO: vptech
   PUBLIC: 'true'
+  SEMANTIC_CONFIG_FILE: changelog
 
 stages:
   - lint
