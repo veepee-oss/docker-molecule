@@ -1,0 +1,6 @@
+## [1.1.1](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.1.0...1.1.1) (2020-07-16)
+
+
+### Bug Fixes
+
+* improved ci ([af803f5](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/af803f54d7d75c4f467ea5669e7cdad1c74469bc))
