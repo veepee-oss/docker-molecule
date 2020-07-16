@@ -1,25 +1,22 @@
 ---
 
 include:
-  - project: veepee/vptech/sre/iac/ci-cd/docker-lint
-    ref: 1.0.0
-    file: gitlab-ci-lint.yml
-  - project: veepee/vptech/sre/iac/ci-cd/docker-build
-    ref: 4.2.0
-    file: gitlab-ci-build.yml
   - project: veepee/vptech/sre/iac/ci-cd/markdown-lint
     ref: 1.2.0
     file: gitlab-ci.yml
+  - project: veepee/vptech/sre/iac/ci-cd/docker-lint
+    ref: 2.0.0
+    file: gitlab-ci.yml
+  - project: veepee/vptech/sre/iac/ci-cd/docker-build
+    ref: 4.2.0
+    file: gitlab-ci-build.yml
   - project: veepee/vptech/sre/iac/ci-cd/semantic-release
-    ref: 2.6.0
+    ref: 2.8.1
     file: gitlab-ci.yml
 
 variables:
   APP_NAME: molecule
   DOCKER_DISABLE_ALL_JOBS: 'true'
-  DOCKER_PUBLIC_REGISTRY_URL: docker.io
-  DOCKER_PUBLIC_REGISTRY_USERNAME: ${PUBLIC_REGISTRY_USERNAME}
-  DOCKER_PUBLIC_REGISTRY_PASSWORD: ${PUBLIC_REGISTRY_PASSWORD}
   DOCKER_PUBLIC_REPO: vptech
   PUBLIC: 'true'
   SEMANTIC_CONFIG_FILE: changelog
@@ -27,25 +24,30 @@ variables:
 stages:
   - lint
   - build
-  - test
   - publish
   - release
+
+public:v2.22:
+  extends: .publish-public:docker
+  variables:
+    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=2.22
+    TAG: 2.22
 
 public:v3.0.4:
   extends: .publish-public:docker
   variables:
-    MOLECULE_VERSION: 3.0.4
+    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=3.0.4
     TAG: 3.0.4
 
 public:v3.0.5:
   extends: .publish-public:docker
   variables:
-    MOLECULE_VERSION: 3.0.5
+    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=3.0.5
     TAG: 3.0.5
 
 public:v3.0.6:
   extends: .publish-public:docker
   variables:
-    MOLECULE_VERSION: 3.0.6
+    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=3.0.6
     TAG: 3.0.6 latest
 ...
