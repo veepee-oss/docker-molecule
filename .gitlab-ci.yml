@@ -29,7 +29,7 @@ variables:
 public:v2.22:
   extends: .publish-public:docker
   variables:
-    DOCKER_BUILD_ARGS: '--build-arg MOLECULE_VERSION=2.22.0'
+    DOCKER_BUILD_ARGS: '--build-arg MOLECULE_VERSION=2.22'
     TAG: 2.22
 
 public:v3.0.4:
