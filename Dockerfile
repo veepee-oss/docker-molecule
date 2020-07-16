@@ -17,8 +17,8 @@ FROM python:3.8-alpine
 ARG ANSIBLE_VERSION="2.9.10"
 ARG MOLECULE_VERSION="3.0.6"
 
-RUN apk add --no-cache --quiet --virtual \
-      .build-deps \
+RUN apk add --no-cache --quiet \
+      build-base \
       ca-certificates \
       gcc \
       libffi-dev \
@@ -32,6 +32,7 @@ RUN pip3 install --quiet --upgrade pip && \
     pip3 install --quiet molecule==${MOLECULE_VERSION}
 
 RUN apk del --no-cache --quiet \
+      build-base \
       gcc \
       make  && \
     rm -rf /var/cache/apk/*
