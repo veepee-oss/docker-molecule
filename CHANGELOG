@@ -1,3 +1,14 @@
+## [1.1.2](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.1.1...1.1.2) (2020-07-16)
+
+
+### Bug Fixes
+
+* add netaddr package ([ff5363f](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/ff5363ff883d03431a0147baa7c38b207b7a18fa))
+* update ci ([67003b7](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/67003b786df49367a280721c135bb7260b4b269d))
+* update ci ([504c664](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/504c664670a1fd277d73cb566eb46b9985b8fa6f))
+* update ci ([74f659e](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/74f659ef5c8bacf9c58149c1b3d832cf670df311))
+* update ci ([964e6aa](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/964e6aa91d1bc10bf3476c88e379187145debf89))
+
 ## [1.1.1](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.1.0...1.1.1) (2020-07-16)
 
 
