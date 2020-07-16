@@ -29,7 +29,8 @@ RUN apk add --no-cache --quiet \
 
 RUN pip3 install --quiet --upgrade pip && \
     pip3 install --quiet ansible==${ANSIBLE_VERSION} && \
-    pip3 install --quiet molecule==${MOLECULE_VERSION}
+    pip3 install --quiet molecule==${MOLECULE_VERSION} && \
+    pip3 install --quiet netaddr
 
 RUN apk del --no-cache --quiet \
       build-base \
