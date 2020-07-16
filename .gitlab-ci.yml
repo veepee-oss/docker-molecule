@@ -1,4 +1,9 @@
 ---
+stages:
+  - lint
+  - build
+  - publish
+  - release
 
 include:
   - project: veepee/vptech/sre/iac/ci-cd/markdown-lint
@@ -21,33 +26,27 @@ variables:
   PUBLIC: 'true'
   SEMANTIC_CONFIG_FILE: changelog
 
-stages:
-  - lint
-  - build
-  - publish
-  - release
-
 public:v2.22:
   extends: .publish-public:docker
   variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=2.22
-    TAG: 2.22
+    DOCKER_BUILD_ARGS: '--build-arg MOLECULE_VERSION=2.22.0'
+    TAG: 3.0.4
 
 public:v3.0.4:
   extends: .publish-public:docker
   variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=3.0.4
+    DOCKER_BUILD_ARGS: '--build-arg MOLECULE_VERSION=3.0.4'
     TAG: 3.0.4
 
 public:v3.0.5:
   extends: .publish-public:docker
   variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=3.0.5
+    DOCKER_BUILD_ARGS: '--build-arg MOLECULE_VERSION=3.0.5'
     TAG: 3.0.5
 
 public:v3.0.6:
   extends: .publish-public:docker
   variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=3.0.6
-    TAG: 3.0.6 latest
+    DOCKER_BUILD_ARGS: '--build-arg MOLECULE_VERSION=3.0.6'
+    TAG: '3.0.6 latest'
 ...
