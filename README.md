@@ -31,7 +31,8 @@ Supported tags.
 
 - 2.22
 - 3.0.4
-- 3.0.5, latest
+- 3.0.5
+- 3.0.6, latest
 
 ## Limitations
 
