@@ -20,11 +20,15 @@ ARG MOLECULE_VERSION="3.0.6"
 RUN apk add --no-cache --quiet \
       build-base \
       ca-certificates \
+      docker \
+      docker-py \
       gcc \
+      git \
       libffi-dev \
       linux-headers \
       make \
       musl-dev \
+      openssh-client \
       openssl-dev
 
 RUN pip3 install --quiet --upgrade pip && \
