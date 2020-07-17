@@ -1,3 +1,15 @@
+# [1.2.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.1.2...1.2.0) (2020-07-17)
+
+
+### Bug Fixes
+
+* ci issue with 2.22 tag ([df491fd](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/df491fdb151434f455e441032cfc0867728eae15))
+
+
+### Features
+
+* add docker ([8f7bb05](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/8f7bb05e6bb9c0c145b5465d8475d367e8069e9f))
+
 ## [1.1.2](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.1.1...1.1.2) (2020-07-16)
 
 
