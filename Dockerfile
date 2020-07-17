@@ -18,7 +18,6 @@ ARG ANSIBLE_VERSION="2.9.10"
 ARG MOLECULE_VERSION="3.0.6"
 
 RUN apk add --no-cache --quiet \
-      aptitude \
       build-base \
       ca-certificates \
       gcc \
