@@ -13,7 +13,7 @@ include:
     ref: 2.0.0
     file: gitlab-ci.yml
   - project: veepee/vptech/sre/iac/ci-cd/docker-build
-    ref: 4.2.0
+    ref: 4.2.3
     file: gitlab-ci-build.yml
   - project: veepee/vptech/sre/iac/ci-cd/semantic-release
     ref: 2.9.0
