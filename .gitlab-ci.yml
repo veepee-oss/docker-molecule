@@ -21,32 +21,27 @@ include:
 
 variables:
   APP_NAME: molecule
-  DOCKER_DISABLE_ALL_JOBS: 'true'
   DOCKER_PUBLIC_REPO: vptech
   PUBLIC: 'true'
   SEMANTIC_CONFIG_FILE: changelog
 
-public:v2.22:
-  extends: .publish-public:docker
-  variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=2.22
-    TAG: '2.22'
+## Feature build / publish / delete
 
-public:v3.0.4:
-  extends: .publish-public:docker
+publish-feature:docker:
   variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=3.0.4
-    TAG: 3.0.4
+    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=${TAG}
+  parallel:
+    matrix:
+      - NAME: ['test']
+        TAG: ['2.22','3.0.4','3.0.5','3.0.6']
 
-public:v3.0.5:
-  extends: .publish-public:docker
-  variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=3.0.5
-    TAG: 3.0.5
+## Public publish
 
-public:v3.0.6:
-  extends: .publish-public:docker
+publish-public-release:docker:
   variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=3.0.6
-    TAG: 3.0.6 latest
+    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=${TAG}
+  parallel:
+    matrix:
+      - NAME: ['test']
+        TAG: ['2.22','3.0.4','3.0.5','3.0.6']
 ...
