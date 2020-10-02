@@ -37,7 +37,7 @@ publish-feature:docker:
 
 delete-feature:docker:
   variables:
-    TAG: ['2.22','3.0.4','3.0.5','3.0.6']
+    TAG: '2.22 3.0.4 3.0.5 3.0.6'
 
 ## Public publish
 
