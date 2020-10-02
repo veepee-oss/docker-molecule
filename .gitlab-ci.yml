@@ -13,7 +13,7 @@ include:
     ref: 2.0.1
     file: gitlab-ci.yml
   - project: veepee/vptech/sre/iac/ci-cd/docker-build
-    ref: 4.2.3
+    ref: feat/delete_multi_tags
     file: gitlab-ci-build.yml
   - project: veepee/vptech/sre/iac/ci-cd/semantic-release
     ref: 2.9.0
@@ -34,6 +34,10 @@ publish-feature:docker:
     matrix:
       - NAME: ['test']
         TAG: ['2.22','3.0.4','3.0.5','3.0.6']
+
+delete-feature:docker:
+  variables:
+    TAG: ['2.22','3.0.4','3.0.5','3.0.6']
 
 ## Public publish
 
