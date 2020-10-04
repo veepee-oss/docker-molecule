@@ -7,7 +7,7 @@ stages:
 
 include:
   - project: veepee/vptech/sre/iac/ci-cd/markdown-lint
-    ref: 1.2.0
+    ref: 1.2.1
     file: gitlab-ci.yml
   - project: veepee/vptech/sre/iac/ci-cd/docker-lint
     ref: 2.0.1
