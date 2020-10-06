@@ -36,6 +36,8 @@ RUN pip3 install --quiet --upgrade pip && \
     pip3 install --quiet molecule==${MOLECULE_VERSION} && \
     pip3 install --quiet netaddr
 
+RUN ansible-galaxy collection install community.general
+
 RUN apk del --no-cache --quiet \
       build-base \
       gcc \
