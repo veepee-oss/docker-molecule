@@ -1,3 +1,18 @@
+# [1.3.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.2.0...1.3.0) (2020-10-06)
+
+
+### Bug Fixes
+
+* var definition ([c882175](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/c8821757655e97203b163b4707d92a5414920e86))
+
+
+### Features
+
+* install ansible-galaxy collection ([72951bb](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/72951bb2f4568a754f882e9b76b027129829fa4c))
+* multi tag deletion ([c43772c](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/c43772c0636c0e2165268ad86f221291bdc566ca))
+* test matrix ([e516e64](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/e516e648108d082bf56dd799ed06ea4a145dcb7a))
+* use matrix instead of repeats :D ([e07b5dc](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/e07b5dc7fe805f74f2e24fa81bd0972a417d95f3))
+
 # [1.2.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.1.2...1.2.0) (2020-07-17)
 
 
