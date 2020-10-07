@@ -34,7 +34,8 @@ RUN apk add --no-cache --quiet \
 RUN pip3 install --quiet --upgrade pip && \
     pip3 install --quiet ansible==${ANSIBLE_VERSION} && \
     pip3 install --quiet molecule==${MOLECULE_VERSION} && \
-    pip3 install --quiet netaddr
+    pip3 install --quiet netaddr && \
+    pip3 install --quiet pytest
 
 RUN ansible-galaxy collection install community.general
 
