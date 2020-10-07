@@ -1,3 +1,10 @@
+## [1.3.3](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.3.2...1.3.3) (2020-10-07)
+
+
+### Bug Fixes
+
+* add testinfra ([eaba128](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/eaba1288752fc1dd41828578e80fe5ab189b2eeb))
+
 ## [1.3.2](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.3.1...1.3.2) (2020-10-07)
 
 
