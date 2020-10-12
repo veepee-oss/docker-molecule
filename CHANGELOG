@@ -1,3 +1,16 @@
+## [1.3.4](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.3.3...1.3.4) (2020-10-12)
+
+
+### Bug Fixes
+
+* remove pytest-ansible package ([c0fbef7](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/c0fbef74c90e2c368f476f7e80de1ca6de6b023a))
+
+
+### Continuous Integration
+
+* enhance image build for feature branch ([f99983f](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/f99983f36b08169e113893bacab34147ee041549))
+* upgrade ci ([b36be64](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/b36be64f06cd3e27b7ea12a33cc07ec045222207))
+
 ## [1.3.3](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.3.2...1.3.3) (2020-10-07)
 
 
