@@ -29,23 +29,25 @@ variables:
 
 publish-feature:docker:
   variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=${TAG}
+    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=${VERSION}
+    TAG: "${CI_COMMIT_REF_SLUG}-${VERSION}"
   parallel:
     matrix:
       - NAME: ['test']
-        TAG: ['2.22','3.0.4','3.0.5','3.0.6']
+        VERSION: ['2.22','3.0.4','3.0.5','3.0.6']
 
 delete-feature:docker:
   variables:
-    TAG: '2.22 3.0.4 3.0.5 3.0.6'
+    TAG: '${CI_COMMIT_REF_SLUG}-2.22 ${CI_COMMIT_REF_SLUG}-3.0.4 ${CI_COMMIT_REF_SLUG}-3.0.5 ${CI_COMMIT_REF_SLUG}-3.0.6'
 
 ## Public publish
 
 publish-public-release:docker:
   variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=${TAG}
+    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=${VERSION}
+    TAG: "${CI_COMMIT_REF_SLUG}-${VERSION}"
   parallel:
     matrix:
       - NAME: ['test']
-        TAG: ['2.22','3.0.4','3.0.5','3.0.6']
+        VERSION: ['2.22','3.0.4','3.0.5','3.0.6']
 ...
