@@ -45,7 +45,7 @@ delete-feature:docker:
 publish-public-release:docker:
   variables:
     DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=${VERSION}
-    TAG: "${CI_COMMIT_REF_SLUG}-${VERSION}"
+    TAG: "${VERSION}"
   parallel:
     matrix:
       - NAME: ['test']
