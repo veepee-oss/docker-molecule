@@ -36,8 +36,7 @@ RUN pip3 install --quiet --upgrade pip && \
     pip3 install --quiet molecule==${MOLECULE_VERSION} && \
     pip3 install --quiet netaddr && \
     pip3 install --quiet testinfra && \
-    pip3 install --quiet pytest && \
-    pip3 install --quiet pytest-ansible
+    pip3 install --quiet pytest
 
 RUN ansible-galaxy collection install community.general
 
