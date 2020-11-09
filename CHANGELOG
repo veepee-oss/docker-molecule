@@ -1,3 +1,10 @@
+## [1.3.5](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.3.4...1.3.5) (2020-11-09)
+
+
+### Bug Fixes
+
+* add docker proxy ([26ffa31](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/26ffa315f2027aa3bc7e231cf97b1f4423519a7f))
+
 ## [1.3.4](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.3.3...1.3.4) (2020-10-12)
 
 
