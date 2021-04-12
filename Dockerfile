@@ -20,6 +20,7 @@ ARG MOLECULE_VERSION="3.0.6"
 RUN apk add --no-cache --quiet \
       build-base \
       ca-certificates \
+      cargo \
       docker \
       docker-py \
       gcc \
