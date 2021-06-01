@@ -10,7 +10,7 @@ include:
     ref: 1.2.2
     file: gitlab-ci.yml
   - project: veepee/vptech/sre/iac/ci-cd/docker-lint
-    ref: 2.0.2
+    ref: 2.1.1
     file: gitlab-ci.yml
   - project: veepee/vptech/sre/iac/ci-cd/docker-build
     ref: 4.3.3
