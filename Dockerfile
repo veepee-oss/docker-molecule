@@ -15,7 +15,7 @@
 FROM docker.registry.vptech.eu/python:3.9-alpine
 
 ARG ANSIBLE_VERSION="2.9.10"
-ARG MOLECULE_VERSION="3.0.6"
+ARG MOLECULE_VERSION="3.4.0"
 
 RUN apk add --no-cache --quiet \
       build-base \
