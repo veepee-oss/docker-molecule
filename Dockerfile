@@ -17,7 +17,9 @@ FROM docker.registry.vptech.eu/python:3.9-alpine
 ARG ANSIBLE_VERSION="2.9.10"
 ARG MOLECULE_VERSION="3.4.0"
 
-RUN apk add --no-cache --quiet \
+RUN apk update  --quiet && \
+    apk upgrade --quiet && \
+    apk add --no-cache --quiet \
       build-base \
       ca-certificates \
       cargo \
@@ -35,6 +37,7 @@ RUN apk add --no-cache --quiet \
 RUN pip3 install --quiet --upgrade pip && \
     pip3 install --quiet ansible==${ANSIBLE_VERSION} && \
     pip3 install --quiet molecule==${MOLECULE_VERSION} && \
+    pip3 install --quiet molecule-docker && \
     pip3 install --quiet netaddr && \
     pip3 install --quiet testinfra && \
     pip3 install --quiet pytest
