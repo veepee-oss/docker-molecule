@@ -32,10 +32,13 @@ RUN apk update  --quiet && \
       make \
       musl-dev \
       openssh-client \
-      openssl-dev
+      openssl-dev \
+      tar
 
 RUN pip3 install --quiet --upgrade pip && \
     pip3 install --quiet ansible==${ANSIBLE_VERSION} && \
+    pip3 install --quiet docker && \
+    pip3 install --quiet jmespath && \
     pip3 install --quiet molecule==${MOLECULE_VERSION} && \
     pip3 install --quiet molecule-docker && \
     pip3 install --quiet netaddr && \
