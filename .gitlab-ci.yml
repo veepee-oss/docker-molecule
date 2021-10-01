@@ -11,7 +11,7 @@ include:
     ref: 4.4.1
     file: gitlab-ci-build.yml
   - project: veepee/vptech/sre/iac/ci-cd/semantic-release
-    ref: 3.8.0
+    ref: 3.9.0
     file: gitlab-ci.yml
 
 stages:
