@@ -45,7 +45,8 @@ RUN pip3 install --quiet --upgrade pip && \
     pip3 install --quiet testinfra && \
     pip3 install --quiet pytest
 
-RUN ansible-galaxy collection install community.general
+RUN ansible-galaxy collection install community.docker && \
+    ansible-galaxy collection install community.general
 
 RUN apk del --no-cache --quiet \
       build-base \
