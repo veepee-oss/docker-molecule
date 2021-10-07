@@ -1,3 +1,17 @@
+# [1.5.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.4.1...1.5.0) (2021-10-06)
+
+
+### Chores
+
+* **deps:** update dependency veepee/vptech/sre/iac/ci-cd/docker-build to v4.4.1 ([aa1fc68](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/aa1fc681f2903f2b798334b4c76f594df82361d0))
+* **deps:** update dependency veepee/vptech/sre/iac/ci-cd/docker-build to v4.5.1 ([a6edfa3](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/a6edfa3ff4d71b75cd01fb90bfe3369b1b8067d2))
+* **deps:** update dependency veepee/vptech/sre/iac/ci-cd/semantic-release to v3.9.0 ([36f415a](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/36f415ad04cf1aa092fcfed1a28ed0cd45e5a164))
+
+
+### Features
+
+* add community.docker ([7d1ed0a](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/7d1ed0a2d502d8280f440662147249092fb9fdfa))
+
 ## [1.4.1](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.4.0...1.4.1) (2021-08-24)
 
 
