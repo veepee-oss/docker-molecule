@@ -12,7 +12,7 @@
 # OTHER  TORTIOUS ACTION,  ARISING OUT  OF  OR IN  CONNECTION WITH  THE USE  OR
 # PERFORMANCE OF THIS SOFTWARE.
 
-FROM docker.registry.vptech.eu/python:3.9-alpine
+FROM docker.registry.vptech.eu/python:3.10-alpine
 
 ARG ANSIBLE_VERSION="2.9.10"
 ARG MOLECULE_VERSION="3.4.0"
