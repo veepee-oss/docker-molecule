@@ -1,17 +1,17 @@
 ---
 
 include:
-  - project: veepee/vptech/sre/iac/ci-cd/markdown-lint
-    ref: 1.4.0
+  - project: veepee/vptech/sre/iac/ci-cd/docker-build
+    ref: latest
     file: gitlab-ci.yml
   - project: veepee/vptech/sre/iac/ci-cd/docker-lint
-    ref: 2.2.0
+    ref: latest
     file: gitlab-ci.yml
-  - project: veepee/vptech/sre/iac/ci-cd/docker-build
-    ref: 4.5.2
-    file: gitlab-ci-build.yml
+  - project: veepee/vptech/sre/iac/ci-cd/markdown-lint
+    ref: latest
+    file: gitlab-ci.yml
   - project: veepee/vptech/sre/iac/ci-cd/semantic-release
-    ref: 3.11.0
+    ref: latest
     file: gitlab-ci.yml
 
 stages:
