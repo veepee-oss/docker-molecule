@@ -1,12 +1,8 @@
 # docker-molecule
 
-1. [Overview](#overview)
-1. [Description](#description)
-1. [Tags](#setup)
-1. [Usage](#usage)
-1. [Limitations](#limitations)
-1. [Development](#development)
-1. [Miscellaneous](#miscellaneous)
+⚠️ This docker image is deprecated, please use [molecule-test](https://git.vptech.eu/veepee/vptech/sre/iac/ci-cd/molecule-test).
+
+⚠️ Please check also [ansible-role](https://git.vptech.eu/veepee/vptech/sre/iac/ci-cd/ansible-role).
 
 ## Overview
 
