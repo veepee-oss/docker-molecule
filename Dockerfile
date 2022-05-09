@@ -16,7 +16,7 @@ FROM docker.registry.vptech.eu/python:3.10-alpine
 
 ARG ANSIBLE_CORE="2.12.4"
 ARG ANSIBLE="5.7.1"
-ARG MOLECULE_VERSION="3.6.2"
+ARG MOLECULE_VERSION="3.6.1"
 
 RUN apk update  --quiet && \
     apk upgrade --quiet && \
