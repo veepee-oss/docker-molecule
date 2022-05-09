@@ -1,3 +1,17 @@
+# [1.8.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.7.0...1.8.0) (2022-05-09)
+
+
+### Chores
+
+* **deps:** update dependency veepee/vptech/sre/iac/ci-cd/docker-build to v5 ([94d3426](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/94d34267ae0f76a2836dad54d7f463aeb7e83c64))
+* **deps:** update dependency veepee/vptech/sre/iac/ci-cd/docker-lint to v2.2.0 ([810e75b](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/810e75b9e6a40094da1634485ef4a2ffb225502b))
+* **deps:** update dependency veepee/vptech/sre/iac/ci-cd/semantic-release to v3.11.0 ([a2ae1c3](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/a2ae1c365c8f6611d26f25abd26ec780994bf7b0))
+
+
+### Features
+
+* update ansible to 2.12.4 and molecule to 3.6.2 ([6340ac0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/6340ac0066db220fff051dee98bddd0cc74b43d9))
+
 # [1.7.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.6.1...1.7.0) (2021-12-23)
 
 
