@@ -14,8 +14,9 @@
 
 FROM docker.registry.vptech.eu/python:3.10-alpine
 
-ARG ANSIBLE_VERSION="2.10.7"
-ARG MOLECULE_VERSION="3.5.2"
+ARG ANSIBLE_CORE="2.12.4"
+ARG ANSIBLE="5.7.1"
+ARG MOLECULE_VERSION="3.6.2"
 
 RUN apk update  --quiet && \
     apk upgrade --quiet && \
@@ -36,7 +37,8 @@ RUN apk update  --quiet && \
       tar
 
 RUN pip3 install --quiet --upgrade pip && \
-    pip3 install --quiet ansible==${ANSIBLE_VERSION} && \
+    pip3 install --quiet ansible-core==${ANSIBLE_CORE} && \
+    pip3 install --quiet ansible==${ANSIBLE} && \
     pip3 install --quiet docker && \
     pip3 install --quiet jmespath && \
     pip3 install --quiet molecule==${MOLECULE_VERSION} && \
