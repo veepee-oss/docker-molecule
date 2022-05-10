@@ -14,10 +14,6 @@
 
 FROM docker.registry.vptech.eu/python:3.10-alpine
 
-ARG ANSIBLE_CORE="2.12.4"
-ARG ANSIBLE="5.7.1"
-ARG MOLECULE_VERSION="3.6.1"
-
 RUN apk update  --quiet && \
     apk upgrade --quiet && \
     apk add --no-cache --quiet \
@@ -36,16 +32,9 @@ RUN apk update  --quiet && \
       openssl-dev \
       tar
 
-RUN pip3 install --quiet --upgrade pip && \
-    pip3 install --quiet ansible-core==${ANSIBLE_CORE} && \
-    pip3 install --quiet ansible==${ANSIBLE} && \
-    pip3 install --quiet docker && \
-    pip3 install --quiet jmespath && \
-    pip3 install --quiet molecule==${MOLECULE_VERSION} && \
-    pip3 install --quiet molecule-docker==1.0.2 && \
-    pip3 install --quiet netaddr && \
-    pip3 install --quiet testinfra && \
-    pip3 install --quiet pytest
+COPY requirements.txt /tmp
+
+RUN pip3 install --no-cache-dir --requirement /tmp/requirements.txt
 
 RUN ansible-galaxy collection install community.docker && \
     ansible-galaxy collection install community.general
