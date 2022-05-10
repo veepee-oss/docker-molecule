@@ -4,7 +4,7 @@ include:
   - project: veepee/vptech/sre/iac/ci-cd/docker-build
     ref: 5-latest
     file: gitlab-ci.yml
-  - project: veepee/vptech/ci-cd/docker-lint
+  - project: veepee/vptech/ci-cd/dockerfile-lint
     ref: 1-latest
     file: gitlab-ci.yml
   - project: veepee/vptech/ci-cd/markdown-lint
