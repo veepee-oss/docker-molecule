@@ -1,3 +1,4 @@
+pip==22.0.4
 ansible-core==2.12.5
 ansible==5.7.1
 docker==5.0.3

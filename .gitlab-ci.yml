@@ -4,8 +4,8 @@ include:
   - project: veepee/vptech/sre/iac/ci-cd/docker-build
     ref: 5-latest
     file: gitlab-ci.yml
-  - project: veepee/vptech/sre/iac/ci-cd/docker-lint
-    ref: 3-latest
+  - project: veepee/vptech/ci-cd/docker-lint
+    ref: 1-latest
     file: gitlab-ci.yml
   - project: veepee/vptech/ci-cd/markdown-lint
     ref: 1-latest
@@ -25,4 +25,5 @@ variables:
   DOCKER_PUBLIC_REPO: vptech
   PUBLIC: 'true'
   SEMANTIC_CONFIG_FILE: changelog
+  DOCKERFILE_LINT_EXTRA: --ignore DL3018
 ...

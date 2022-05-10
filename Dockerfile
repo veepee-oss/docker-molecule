@@ -32,10 +32,9 @@ RUN apk update  --quiet && \
       openssl-dev \
       tar
 
-COPY requirements.txt .
+COPY requirements.txt /tmp
 
-RUN pip3 install --quiet --upgrade pip && \
-    pip3 install -r requirements.txt
+RUN pip3 install --no-cache-dir --requirement /tmp/requirements.txt
 
 RUN ansible-galaxy collection install community.docker && \
     ansible-galaxy collection install community.general
