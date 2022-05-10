@@ -14,9 +14,10 @@
 
 FROM docker.registry.vptech.eu/python:3.10-alpine
 
-ARG ANSIBLE_CORE="2.12.4"
+ARG ANSIBLE_CORE="2.12.5"
 ARG ANSIBLE="5.7.1"
 ARG MOLECULE_VERSION="3.6.1"
+ARG MOLECULE_DOCKER_VERSION="1.1.0"
 
 RUN apk update  --quiet && \
     apk upgrade --quiet && \
@@ -42,7 +43,7 @@ RUN pip3 install --quiet --upgrade pip && \
     pip3 install --quiet docker && \
     pip3 install --quiet jmespath && \
     pip3 install --quiet molecule==${MOLECULE_VERSION} && \
-    pip3 install --quiet molecule-docker==1.0.2 && \
+    pip3 install --quiet molecule-docker==${MOLECULE_DOCKER_VERSION} && \
     pip3 install --quiet netaddr && \
     pip3 install --quiet testinfra && \
     pip3 install --quiet pytest

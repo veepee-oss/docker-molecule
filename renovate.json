@@ -1,15 +1,32 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-      "config:base"
-    ],
-    "packageRules": [
-      {
-        "updateTypes": ["minor", "patch", "pin", "digest"],
-        "automerge": true
-      }
-    ],
-    "schedule": [
-      "before 3am on the first day of the month"
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>veepee/vptech/renovate/config#1.3.0"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["ARG ANSIBLE_CORE=(?<currentValue>.*?)\n"],
+      "depNameTemplate": "ansible-core",
+      "datasourceTemplate": "pypi"
+    },
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["ARG ANSIBLE=(?<currentValue>.*?)\n"],
+      "depNameTemplate": "ansible",
+      "datasourceTemplate": "pypi"
+    },
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["ARG MOLECULE_VERSION=(?<currentValue>.*?)\n"],
+      "depNameTemplate": "molecule",
+      "datasourceTemplate": "pypi"
+    },
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["ARG MOLECULE_DOCKER_VERSION=(?<currentValue>.*?)\n"],
+      "depNameTemplate": "molecule-docker",
+      "datasourceTemplate": "pypi"
+    }
+  ]
 }

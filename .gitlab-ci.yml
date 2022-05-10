@@ -2,16 +2,16 @@
 
 include:
   - project: veepee/vptech/sre/iac/ci-cd/docker-build
-    ref: latest
+    ref: 5-latest
     file: gitlab-ci.yml
   - project: veepee/vptech/sre/iac/ci-cd/docker-lint
-    ref: latest
+    ref: 3-latest
     file: gitlab-ci.yml
-  - project: veepee/vptech/sre/iac/ci-cd/markdown-lint
-    ref: latest
+  - project: veepee/vptech/ci-cd/markdown-lint
+    ref: 1-latest
     file: gitlab-ci.yml
   - project: veepee/vptech/sre/iac/ci-cd/semantic-release
-    ref: latest
+    ref: 4-latest
     file: gitlab-ci.yml
 
 stages:
@@ -25,26 +25,4 @@ variables:
   DOCKER_PUBLIC_REPO: vptech
   PUBLIC: 'true'
   SEMANTIC_CONFIG_FILE: changelog
-
-publish-feature:docker:
-  variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=${VERSION}
-    TAG: "${CI_COMMIT_REF_SLUG}-${VERSION}"
-  parallel:
-    matrix:
-      - NAME: [ 'VERSION' ]
-        VERSION: [ '3.4.1', '3.5.2' ]
-
-delete-feature:docker:
-  variables:
-    TAG: '${CI_COMMIT_REF_SLUG}-3.4.1 ${CI_COMMIT_REF_SLUG}-3.5.2'
-
-publish-public-release:docker:
-  variables:
-    DOCKER_BUILD_ARGS: --build-arg MOLECULE_VERSION=${VERSION}
-    TAG: "${VERSION}"
-  parallel:
-    matrix:
-      - NAME: [ 'VERSION' ]
-        VERSION: [ '3.4.1', '3.5.2' ]
 ...
