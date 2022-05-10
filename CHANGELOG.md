@@ -1,3 +1,10 @@
+# [4.0.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/3.9.9...4.0.0) (2022-05-10)
+
+
+### BREAKING CHANGES
+
+* use gitlab tags as versioning ([c6facbd](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/c6facbdf815fd8c2ecc7e826690ab2d7dc891917))
+
 # [1.8.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/1.7.0...1.8.0) (2022-05-09)
 
 
