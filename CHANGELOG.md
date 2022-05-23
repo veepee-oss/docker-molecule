@@ -1,3 +1,10 @@
+## [4.0.1](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.0.0...4.0.1) (2022-05-23)
+
+
+### Bug Fixes
+
+* **galaxy:** update dependency ansible to v5.8.0 ([73647b6](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/73647b6eba37452c1d37596c84c9d3022390685e))
+
 # [4.0.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/3.9.9...4.0.0) (2022-05-10)
 
 
