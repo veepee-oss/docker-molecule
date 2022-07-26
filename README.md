@@ -1,9 +1,5 @@
 # docker-molecule
 
-⚠️ This docker image is deprecated, please use [molecule-test](https://git.vptech.eu/veepee/vptech/sre/iac/ci-cd/molecule-test).
-
-⚠️ Please check also [ansible-role](https://git.vptech.eu/veepee/vptech/sre/iac/ci-cd/ansible-role).
-
 ## Overview
 
 Molecule project is  designed to aid in the development  and testing of Ansible
@@ -30,7 +26,8 @@ Supported tags.
 - 3.1.5
 - 3.2.4
 - 3.3.4
-- 3.4.0, latest
+- 3.4.0
+- 4.0.1, latest
 
 ## Limitations
 
