@@ -1,17 +1,8 @@
 ---
 
 include:
-  - project: veepee/vptech/sre/iac/ci-cd/docker-build
-    ref: 5-latest
-    file: gitlab-ci.yml
-  - project: veepee/vptech/ci-cd/dockerfile-lint
+  - project: veepee/vptech/ci-cd/container-image
     ref: 1-latest
-    file: gitlab-ci.yml
-  - project: veepee/vptech/ci-cd/markdown-lint
-    ref: 1-latest
-    file: gitlab-ci.yml
-  - project: veepee/vptech/sre/iac/ci-cd/semantic-release
-    ref: 4-latest
     file: gitlab-ci.yml
 
 stages:
@@ -22,8 +13,7 @@ stages:
 
 variables:
   APP_NAME: molecule
-  DOCKER_PUBLIC_REPO: vptech
-  PUBLIC: 'true'
-  SEMANTIC_CONFIG_FILE: changelog
-  DOCKERFILE_LINT_EXTRA: --ignore DL3018
+  DOCKERFILE_LINT_EXTRA: --ignore DL3013 --ignore DL3018
+  MOLECULE_VERSION: 4.0.1
+  TAG: ${MOLECULE_VERSION}
 ...

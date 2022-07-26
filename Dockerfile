@@ -1,4 +1,4 @@
-# Copyright (c) 2020 , Veepee
+# Copyright (c) 2020, Veepee
 #
 # Permission  to use,  copy, modify,  and/or distribute  this software  for any
 # purpose  with or  without  fee is  hereby granted,  provided  that the  above
@@ -14,9 +14,9 @@
 
 FROM docker.registry.vptech.eu/python:3.10-alpine
 
-RUN apk update  --quiet && \
-    apk upgrade --quiet && \
-    apk add --no-cache --quiet \
+RUN apk update  --no-cache --quiet && \
+    apk upgrade --no-cache --quiet && \
+    apk add     --no-cache --quiet \
       build-base \
       ca-certificates \
       cargo \
@@ -34,7 +34,8 @@ RUN apk update  --quiet && \
 
 COPY requirements.txt /tmp
 
-RUN pip3 install --no-cache-dir --requirement /tmp/requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir --requirement /tmp/requirements.txt
 
 RUN ansible-galaxy collection install community.docker && \
     ansible-galaxy collection install community.general
