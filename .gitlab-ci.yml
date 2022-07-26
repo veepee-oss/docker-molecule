@@ -13,7 +13,7 @@ stages:
 
 variables:
   APP_NAME: molecule
-  DOCKERFILE_LINT_EXTRA: --ignore DL3018
+  DOCKERFILE_LINT_EXTRA: --ignore DL3013 --ignore DL3018
   MOLECULE_VERSION: 4.0.1
   TAG: ${MOLECULE_VERSION}
 ...
