@@ -1,3 +1,10 @@
+## [4.1.1](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.1.0...4.1.1) (2022-07-28)
+
+
+### Bug Fixes
+
+* **renovate:** update dependency veepee/vptech/renovate/config to v1.4.0 ([74c3095](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/74c3095a5ec65e0917806103adf452113da9cd38))
+
 # [4.1.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.0.2...4.1.0) (2022-07-26)
 
 
