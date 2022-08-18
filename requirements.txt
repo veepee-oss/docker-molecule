@@ -1,5 +1,5 @@
-ansible-core==2.13.2
-ansible==5.8.0 # do not upgrade to 6.x
+ansible-core==2.12.5 # do not upgrade to 6.x
+ansible==5.8.0       # do not upgrade to 6.x
 docker==5.0.3
 jmespath==1.0.1
 molecule==4.0.1
