@@ -37,8 +37,8 @@ COPY requirements.txt /tmp
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir --requirement /tmp/requirements.txt
 
-RUN ansible-galaxy collection install community.docker,v2.7.1 && \
-    ansible-galaxy collection install community.general,v5.4.0
+RUN ansible-galaxy collection install community.docker:==v2.7.1 && \
+    ansible-galaxy collection install community.general:==v5.4.0
 
 RUN apk del --no-cache --quiet \
       build-base \
