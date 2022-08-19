@@ -1,3 +1,10 @@
+# [4.2.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.1.3...4.2.0) (2022-08-19)
+
+
+### Features
+
+* update versions ([826b620](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/826b6207b2b738e1d2fe6e6c8ba1410bda24af0e))
+
 ## [4.1.3](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.1.2...4.1.3) (2022-08-08)
 
 
