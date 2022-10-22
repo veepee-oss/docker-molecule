@@ -1,3 +1,15 @@
+## [4.2.1](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.2.0...4.2.1) (2022-10-22)
+
+
+### Bug Fixes
+
+* **galaxy:** update dependency ansible-core to v2.13.5 ([ae3ae69](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/ae3ae693fb14166d7791b6cdb22f021e99464d42))
+
+
+### Chores
+
+* **renovate:** update dependency veepee/vptech/renovate/config to v1.4.2 ([590eb33](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/590eb33c6e85f2be7bd6d47297034fe544aeea8e))
+
 # [4.2.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.1.3...4.2.0) (2022-08-19)
 
 
