@@ -2,7 +2,7 @@ ansible-core==2.13.5
 ansible==6.2.0
 docker==6.0.0
 jmespath==1.0.1
-molecule==4.0.2
+molecule==4.0.3
 molecule-docker==2.0.0
 netaddr==0.8.0
 testinfra==6.0.0
