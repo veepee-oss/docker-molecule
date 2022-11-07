@@ -1,6 +1,6 @@
 ansible-core==2.13.5
 ansible==6.5.0
-docker==6.0.0
+docker==6.0.1
 jmespath==1.0.1
 molecule==4.0.3
 molecule-docker==2.0.0
