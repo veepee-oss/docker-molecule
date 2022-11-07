@@ -1,3 +1,10 @@
+## [4.2.4](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.2.3...4.2.4) (2022-11-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency docker to v6.0.1 ([d4c7437](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/d4c74371ee7719bb2e5bd9182c9d2a2a6f4285bd))
+
 ## [4.2.3](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.2.2...4.2.3) (2022-11-07)
 
 
