@@ -1,3 +1,10 @@
+## [4.2.5](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.2.4...4.2.5) (2023-03-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pytest to v7.2.2 ([87c10e6](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/87c10e6ca3a9ba1040a1b2b1e3d7b7d812c09f32))
+
 ## [4.2.4](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.2.3...4.2.4) (2022-11-07)
 
 
