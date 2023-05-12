@@ -30,7 +30,8 @@ RUN apk update  --no-cache --quiet && \
       musl-dev \
       openssh-client \
       openssl-dev \
-      tar
+      tar \
+      rsync
 
 COPY requirements.txt /tmp
 
