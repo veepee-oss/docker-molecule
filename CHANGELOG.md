@@ -1,3 +1,10 @@
+## [5.0.1](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/5.0.0...5.0.1) (2023-05-12)
+
+
+### Bug Fixes
+
+* upgrade molecule & its dependencies ([e5d570b](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/e5d570bb302169c2a6cf7389ed74e928b02b2de9))
+
 ## [4.2.5](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/4.2.4...4.2.5) (2023-03-12)
 
 
