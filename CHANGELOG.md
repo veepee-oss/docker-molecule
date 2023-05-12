@@ -1,3 +1,10 @@
+## [5.0.3](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/5.0.2...5.0.3) (2023-05-12)
+
+
+### Bug Fixes
+
+* install missing rsync pkg ([4a418ff](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/4a418ffcf0ed682ba0d346773514588ac55dc158))
+
 ## [5.0.2](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/5.0.1...5.0.2) (2023-05-12)
 
 
