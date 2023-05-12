@@ -37,14 +37,8 @@ COPY requirements.txt /tmp
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir --requirement /tmp/requirements.txt
 
-RUN ansible-galaxy collection install community.docker:==3.0.2 && \
-    ansible-galaxy collection install community.general:==5.4.0
-
-RUN apk del --no-cache --quiet \
-      build-base \
-      gcc \
-      make  && \
-    rm -rf /var/cache/apk/*
+RUN ansible-galaxy collection install community.docker:==3.4.3 && \
+    ansible-galaxy collection install community.general:==6.5.0
 
 CMD [ "molecule", "--version" ]
 # EOF
