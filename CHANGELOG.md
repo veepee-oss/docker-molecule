@@ -1,3 +1,10 @@
+## [5.0.2](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/5.0.1...5.0.2) (2023-05-12)
+
+
+### Bug Fixes
+
+* wrong tag var in CI ([fb1f748](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/fb1f7489058022bf5e1775f2d164ce94560725e5))
+
 ## [5.0.1](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/5.0.0...5.0.1) (2023-05-12)
 
 
