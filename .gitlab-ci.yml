@@ -2,7 +2,7 @@
 
 include:
   - project: veepee/vptech/ci-cd/container-image
-    ref: 1-latest
+    ref: 1.1.2
     file: gitlab-ci.yml
 
 stages:
