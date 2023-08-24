@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>veepee/vptech/renovate/config#1.4.4"
+    "local>veepee/vptech/renovate/config#1.4.5"
   ]
 }
