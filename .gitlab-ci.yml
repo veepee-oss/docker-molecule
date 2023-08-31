@@ -16,6 +16,9 @@ variables:
   DOCKERFILE_LINT_EXTRA: --ignore DL3013 --ignore DL3018
   MOLECULE_VERSION: 5.0.1
   DOCKER_BUILD_ARGS: "--build-arg MOLECULE_VERSION=${MOLECULE_VERSION}"
-  TAG: "${MOLECULE_VERSION}-${CI_COMMIT_REF_SLUG/-//}"
+  
+.docker_push_cmd:
+  before_script:
+    - export TAG="${MOLECULE_VERSION}-${CI_COMMIT_REF_SLUG/-//}"
 
 ...
