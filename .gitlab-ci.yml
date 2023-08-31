@@ -19,6 +19,7 @@ variables:
   
 .publish:docker:
   before_script:
-    - export TAG="${MOLECULE_VERSION}-${CI_COMMIT_REF_SLUG/-//}"
+    - export VP_BUILD=$(echo ${CI_COMMIT_REF_SLUG} | sed 's/-//g')
+    - export TAG="${MOLECULE_VERSION}-${VP_BUILD}"
 
 ...
