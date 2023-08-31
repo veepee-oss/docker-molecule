@@ -4,6 +4,9 @@ include:
   - project: veepee/vptech/ci-cd/container-image
     ref: 1-latest
     file: gitlab-ci.yml
+  - project: veepee/vptech/ci-cd/docker-build
+    ref: mto/feat/upstream-versioning
+    file: gitlab-ci.yml
 
 stages:
   - lint
@@ -13,13 +16,14 @@ stages:
 
 variables:
   APP_NAME: molecule
+  APP_VERSION: 5.0.1
   DOCKERFILE_LINT_EXTRA: --ignore DL3013 --ignore DL3018
-  MOLECULE_VERSION: 5.0.1
-  DOCKER_BUILD_ARGS: "--build-arg MOLECULE_VERSION=${MOLECULE_VERSION}"
+  DOCKER_BUILD_ARGS: "--build-arg MOLECULE_VERSION=${APP_VERSION}"
+  DOCKER_BUILD_HAS_UPSTREAM: "true"
   
-.publish:docker:
-  before_script:
-    - export VP_BUILD=$(echo ${CI_COMMIT_REF_SLUG} | sed 's/-//g')
-    - export TAG="${MOLECULE_VERSION}-${VP_BUILD}"
+# .publish:docker:
+#   before_script:
+#     - export VP_BUILD=$(echo ${CI_COMMIT_REF_SLUG} | sed 's/-//g')
+#     - export TAG="${MOLECULE_VERSION}-${VP_BUILD}"
 
 ...
