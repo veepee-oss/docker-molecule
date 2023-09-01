@@ -1,3 +1,16 @@
+# [6.0.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/5.0.4...6.0.0) (2023-09-01)
+
+
+### BREAKING CHANGES
+
+* change our versioning ([12216f9](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/12216f9e1a78e1818884caec8e070e5e693af3f6))
+
+
+### Chores
+
+* **renovate:** update dependency veepee/vptech/renovate/config to v1.4.4 ([47cab46](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/47cab4689e7e317bde6bbfc1cc891966a2e1b708))
+* **renovate:** update dependency veepee/vptech/renovate/config to v1.4.5 ([5a1362b](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/5a1362b1b2e37c7df1fc9ce81c910b2c3a80d8c1))
+
 ## [5.0.4](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/5.0.3...5.0.4) (2023-06-09)
 
 
