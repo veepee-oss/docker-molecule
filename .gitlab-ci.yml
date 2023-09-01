@@ -4,9 +4,6 @@ include:
   - project: veepee/vptech/ci-cd/container-image
     ref: 1-latest
     file: gitlab-ci.yml
-  - project: veepee/vptech/ci-cd/docker-build
-    ref: 5-latest
-    file: gitlab-ci.yml
 
 stages:
   - lint
