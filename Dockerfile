@@ -14,6 +14,8 @@
 
 FROM docker.registry.vptech.eu/python:3.10-alpine
 
+ARG MOLECULE_VERSION=5.0.1
+
 RUN apk update  --no-cache --quiet && \
     apk upgrade --no-cache --quiet && \
     apk add     --no-cache --quiet \
@@ -35,7 +37,8 @@ RUN apk update  --no-cache --quiet && \
 
 COPY requirements.txt /tmp
 
-RUN pip install --no-cache-dir --upgrade pip && \
+RUN sed -i "s/^molecule==.*/molecule==${MOLECULE_VERSION}/" /tmp/requirements.txt && \
+    pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir --requirement /tmp/requirements.txt
 
 RUN ansible-galaxy collection install community.docker:==3.4.3 && \

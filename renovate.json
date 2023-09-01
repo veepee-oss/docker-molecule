@@ -2,5 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>veepee/vptech/renovate/config#1.4.5"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^.gitlab-ci.yml$"],
+      "matchStrings": ["ARG MOLECULE_VERSION=(?<currentValue>.*?)\n"],
+      "depNameTemplate": "molecule",
+      "datasourceTemplate": "pip"
+    }
   ]
 }
