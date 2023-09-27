@@ -1,3 +1,10 @@
+## [6.0.1](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/6.0.0...6.0.1) (2023-09-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency netaddr to v0.9.0 ([b6f8d82](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/b6f8d8259e20ea2edde4ad580c3191276b88a827))
+
 # [6.0.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/5.0.4...6.0.0) (2023-09-01)
 
 
