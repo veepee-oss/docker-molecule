@@ -1,5 +1,6 @@
 # https://github.com/ansible-community/ansible-build-data/blob/main/8/CHANGELOG-v8.rst#id583
 ansible-core==2.15.6
+ansible-compat=4.1.10
 ansible==8.6.1
 docker==6.1.3
 jmespath==1.0.1
