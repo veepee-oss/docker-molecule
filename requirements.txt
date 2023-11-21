@@ -1,10 +1,11 @@
-ansible-core==2.14.5
-ansible==7.5.0
+# https://github.com/ansible-community/ansible-build-data/blob/main/8/CHANGELOG-v8.rst#id583
+ansible-core==2.15.6
+ansible==8.6.1
 docker==6.1.3
 jmespath==1.0.1
 # not the real version, check .gitlab-ci.yml#MOLECULE_VERSION
 # we keep it here so it's still usable locally when testing
-molecule==5.0.1 
+molecule==5.0.1
 molecule-docker==2.1.0
 netaddr==0.9.0
 testinfra==6.0.0
