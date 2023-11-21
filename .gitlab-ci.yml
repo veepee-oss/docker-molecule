@@ -13,7 +13,7 @@ stages:
 
 variables:
   APP_NAME: molecule
-  APP_VERSION: 5.0.1
+  APP_VERSION: 6.0.2
   DOCKERFILE_LINT_EXTRA: --ignore DL3013 --ignore DL3018
   DOCKER_BUILD_ARGS: "--build-arg MOLECULE_VERSION=${APP_VERSION}"
   DOCKER_BUILD_HAS_UPSTREAM: "true"
