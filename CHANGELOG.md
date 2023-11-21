@@ -1,3 +1,15 @@
+# [7.0.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/6.0.2...7.0.0) (2023-11-21)
+
+
+### BREAKING CHANGES
+
+* update ansible version ([0d52a83](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/0d52a8398757af642a9119b9f5ff6239f1feede7))
+
+
+### Features
+
+* bump ansible-core to 2.16.0 ([7f1cb50](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/7f1cb50adbb724c11c411ef163e70edde3baca1b))
+
 ## [6.0.2](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/6.0.1...6.0.2) (2023-11-17)
 
 
