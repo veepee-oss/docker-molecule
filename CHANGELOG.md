@@ -1,3 +1,17 @@
+# [8.0.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/7.0.0...8.0.0) (2023-11-21)
+
+
+### BREAKING CHANGES
+
+* add ansible-compat and molecule 6.0.2 ([2e804e0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/2e804e0d0775a5035b73a15ca382227d1680aedc))
+
+
+### Features
+
+* add ansible-compat ([9bd4a10](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/9bd4a10cc761c174c6a333fcd63d3c9c15d2fd33))
+* add ansible-compat ([a8e2871](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/a8e2871f1c5d058ab1a913c0ae38d2e996f2295a))
+* add ansible-compat ([8b500b7](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/commit/8b500b7077caa9c40a6a50acae486341ea323794))
+
 # [7.0.0](https://git.vptech.eu/veepee/vptech/sre/iac/docker-images/molecule/compare/6.0.2...7.0.0) (2023-11-21)
 
 
